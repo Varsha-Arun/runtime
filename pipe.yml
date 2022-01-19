@@ -1,10 +1,10 @@
 pipelines:
-  - name: pipelines
+  - name: pipelines_disk_space
     steps:
-      - name: S_vijaykumar
+      - name: step_disk_space
         type: Bash
-        configuration: 
-          nodePool: u16dynamic  
+#         configuration: 
+#           nodePool: u16dynamic  
         execution:
           onExecute:
             - echo "executing step..."
